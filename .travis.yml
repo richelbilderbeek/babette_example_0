@@ -48,8 +48,6 @@ script:
   - rm result.png
   # Go!
   - travis_wait 60 Rscript example_0.R
-  # Check if all files are created
-  - if [ ! -f result.png ]; then echo "file 'result.png' not found" ; exit 1 ; fi
   # Check dead links
   - rm .travis.yml
   - ./scripts/check_dead_links
