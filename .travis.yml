@@ -44,8 +44,6 @@ before_script:
   - Rscript -e "beastier::install_beast2()"
 
 script:
-  # Delete all previous results
-  - rm result.png
   # Go!
   - travis_wait 60 Rscript example_0.R
   # Check dead links
